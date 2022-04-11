@@ -69,7 +69,7 @@ namespace HWS_Delegates_2022_28_03
                     }
             }
             return false;
-        } 
+        }
         public static void PrintMenu(int menu) // Prints menues
         {
             switch (menu)
@@ -77,7 +77,6 @@ namespace HWS_Delegates_2022_28_03
                 case 1: Console.WriteLine("please choose an option:\n\n1-Add 2-Substruct 3-Divide 4-Multiply"); break;
                 case 2: Console.WriteLine("please choose an option:\n\n1-Again 2-Exit"); break;
             }
-
         }
         //Methods
         public int NumberGetter() // Gets a number from user
@@ -107,7 +106,7 @@ namespace HWS_Delegates_2022_28_03
                 2 => num1 - num2,
                 3 => num1 / num2,
                 4 => num1 * num2,
-                _ => throw new Exception(),
+                _ => 0
             };
             return result;
         }
